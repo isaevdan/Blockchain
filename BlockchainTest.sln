@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest", "BlockchainTest\BlockchainTest.csproj", "{EDD30CCA-95BB-411E-91B4-F342F87E14C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest.DAL", "BlockchainTest.DAL\BlockchainTest.DAL.csproj", "{6BA4A3FC-7C4E-4911-B047-DD79388C9469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest.DAL.Sql", "BlockchainTest.DAL.Sql\BlockchainTest.DAL.Sql.csproj", "{0482E824-DEE3-4D80-8060-89A07277DC26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest.Entities", "BlockchainTest.Entities\BlockchainTest.Entities.csproj", "{9ACC25F6-CF76-4D5C-BAC9-84A61C37111E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest.Bitcoind", "BlockchainTest.Bitcoind\BlockchainTest.Bitcoind.csproj", "{BAD6B7C7-4264-47BA-B20C-2DDD4020ECA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest.Services", "BlockchainTest.Services\BlockchainTest.Services.csproj", "{45F67A0F-AC5F-4D19-8277-0457F8FFEF7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlockchainTest.DAL.Cache", "BlockchainTest.DAL.Cache\BlockchainTest.DAL.Cache.csproj", "{3385C41B-74EE-4034-ABA7-603F9A8909D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDD30CCA-95BB-411E-91B4-F342F87E14C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD30CCA-95BB-411E-91B4-F342F87E14C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD30CCA-95BB-411E-91B4-F342F87E14C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD30CCA-95BB-411E-91B4-F342F87E14C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA4A3FC-7C4E-4911-B047-DD79388C9469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA4A3FC-7C4E-4911-B047-DD79388C9469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA4A3FC-7C4E-4911-B047-DD79388C9469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA4A3FC-7C4E-4911-B047-DD79388C9469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0482E824-DEE3-4D80-8060-89A07277DC26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0482E824-DEE3-4D80-8060-89A07277DC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0482E824-DEE3-4D80-8060-89A07277DC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0482E824-DEE3-4D80-8060-89A07277DC26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACC25F6-CF76-4D5C-BAC9-84A61C37111E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACC25F6-CF76-4D5C-BAC9-84A61C37111E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACC25F6-CF76-4D5C-BAC9-84A61C37111E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACC25F6-CF76-4D5C-BAC9-84A61C37111E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD6B7C7-4264-47BA-B20C-2DDD4020ECA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD6B7C7-4264-47BA-B20C-2DDD4020ECA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD6B7C7-4264-47BA-B20C-2DDD4020ECA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD6B7C7-4264-47BA-B20C-2DDD4020ECA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F67A0F-AC5F-4D19-8277-0457F8FFEF7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F67A0F-AC5F-4D19-8277-0457F8FFEF7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F67A0F-AC5F-4D19-8277-0457F8FFEF7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F67A0F-AC5F-4D19-8277-0457F8FFEF7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3385C41B-74EE-4034-ABA7-603F9A8909D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3385C41B-74EE-4034-ABA7-603F9A8909D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3385C41B-74EE-4034-ABA7-603F9A8909D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3385C41B-74EE-4034-ABA7-603F9A8909D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

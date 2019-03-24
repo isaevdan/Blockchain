@@ -17,10 +17,10 @@ namespace BlockchainTest.DAL.Cache
             _cache = cache;
         }
 
-        public async Task<Wallet> GetWalletForTransaction(decimal amount)
+        public async Task<Wallet[]> GetWalletsForTransaction(decimal amount)
         {
             var wallets = await GetWallets();
-            return wallets.FirstOrDefault(e => e.Balance > amount);
+            return wallets.Where(e => e.Balance > amount).ToArray();
         }
 
         public async Task<Wallet[]> GetWallets()

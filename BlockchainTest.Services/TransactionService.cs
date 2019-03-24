@@ -32,12 +32,16 @@ namespace BlockchainTest.Services
 
         public async Task<bool> SendBtc(string address, decimal amount)
         {
-            var wallet = await _walletService.GetWalletForTransaction(amount);
-            if (wallet == null)
-                return false;
-            
-            var result = await _bitcoindService.SendToAddress(wallet.Name, address, amount);
-            return string.IsNullOrEmpty(result.Error) && !string.IsNullOrEmpty(result.Result);
+            var wallets = await _walletService.GetWalletsForTransaction(amount);
+            foreach (var wallet in wallets)
+            {
+                var result = await _bitcoindService.SendToAddress(wallet.Name, address, amount);
+
+                if (string.IsNullOrEmpty(result.Error) && !string.IsNullOrEmpty(result.Result))
+                    return true;
+            }
+
+            return false;
         }
 
         public async Task<InTransaction[]> GetLast()

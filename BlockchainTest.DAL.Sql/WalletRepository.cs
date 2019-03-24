@@ -16,7 +16,7 @@ namespace BlockchainTest.DAL.Sql
             _configuration = configuration;
         }
 
-        public async Task<Wallet> GetWalletForTransaction(decimal amount)
+        public async Task<Wallet[]> GetWalletsForTransaction(decimal amount)
         {
             return (await SqlExecutor.ExecuteStoreProcedureReader(_configuration.ConnectionString,
                 "Wallets_ForTransaction",
@@ -28,7 +28,7 @@ namespace BlockchainTest.DAL.Sql
                 new[]
                 {
                     new SqlParameter("@Amount", amount),
-                })).FirstOrDefault();
+                }));
         }
 
         public async Task<Wallet[]> GetWallets()

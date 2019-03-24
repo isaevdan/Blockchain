@@ -22,10 +22,9 @@ namespace BlockchainTest.Services
             _logger = logger;
         }
 
-        public async Task<Wallet> GetWalletForTransaction(decimal transactionAmount)
+        public async Task<Wallet[]> GetWalletsForTransaction(decimal transactionAmount)
         {
-            var wallets = await _walletRepository.GetWallets();
-            return wallets.FirstOrDefault(e => e.Balance > transactionAmount);
+            return await _walletRepository.GetWalletsForTransaction(transactionAmount);
         }
 
         public async Task<Wallet[]> GetAllWallets()
